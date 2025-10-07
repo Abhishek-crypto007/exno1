@@ -132,14 +132,12 @@ df_cleaned.to_csv("iris_cleaned.csv", index=False)
 print("\nCleaned dataset saved as 'iris_cleaned.csv'")
 ```
 # Output
-![alt text](<Screenshot (33).png>)
-![alt text](<Screenshot (34).png>)
-![alt text](<Screenshot (35).png>)       
-![alt text](<Screenshot (36).png>)
-![alt text](<Screenshot (37).png>)
-![alt text](<Screenshot (38).png>)
-![alt text](<Screenshot (39).png>)
-![alt text](<Screenshot (40).png>)
+[text](ex1output.txt)
+![alt text](ex1.jpg)
+![alt text](ex1(2).png)
+![alt text](ex1(3).png)
+
+
 
 # Result
 
