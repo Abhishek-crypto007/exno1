@@ -1,28 +1,3 @@
-# Exno:1
-Data Cleaning Process
-
-# AIM
-To read the given data and perform data cleaning and save the cleaned data to a file.
-
-# Explanation
-Data cleaning is the process of preparing data for analysis by removing or modifying data that is incorrect ,incompleted , irrelevant , duplicated or improperly formatted. Data cleaning is not simply about erasing data ,but rather finding a way to maximize datasets accuracy without necessarily deleting the information.
-
-# Algorithm
-STEP 1: Read the given Data
-
-STEP 2: Get the information about the data
-
-STEP 3: Remove the null values from the data
-
-STEP 4: Save the Clean data to the file
-
-STEP 5: Remove outliers using IQR
-
-STEP 6: Use zscore of to remove outliers
-
-# Coding and Output
-
-```
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -34,7 +9,7 @@ from scipy import stats
 # Replace 'your_file.csv' with your CSV file path
 
 
-df = pd.read_csv("iris.csv")
+df = pd.read_csv(r"C:\Users\abhi1\Downloads\iris.csv")
 
 # -----------------------------
 # STEP 2: BASIC DATA INSPECTION
@@ -76,7 +51,7 @@ df_bfill = df.fillna(method='bfill')
 
 # Option 4: Fill null values with mean of a column
 # Replace 'column_name' with your actual column name
-column_name = df.columns[1]  # Example: use first column
+column_name = df.columns[0]  # Example: use first column
 mean_value = df[column_name].mean()
 df[column_name].fillna(mean_value, inplace=True)
 
@@ -119,29 +94,3 @@ plt.title("Boxplot After Removing Outliers (Z-Score)")
 plt.show()
 
 print("\nScript Completed!")
-
-# -----------------------------
-# STEP 8: SAVE CLEANED DATASET
-# -----------------------------
-# Choose which cleaned version to save (e.g., after removing outliers with Z-score)
-df_cleaned = df_no_outliers_z
-
-# Save to a new CSV file
-df_cleaned.to_csv("iris_cleaned.csv", index=False)
-
-print("\nCleaned dataset saved as 'iris_cleaned.csv'")
-```
-# Output
-![alt text](<Screenshot (33).png>)
-![alt text](<Screenshot (34).png>)
-![alt text](<Screenshot (35).png>)       
-![alt text](<Screenshot (36).png>)
-![alt text](<Screenshot (37).png>)
-![alt text](<Screenshot (38).png>)
-![alt text](<Screenshot (39).png>)
-![alt text](<Screenshot (40).png>)
-
-# Result
-
-This Python script loads the Iris dataset, inspects and cleans it by checking for and handling missing values, then detects and removes outliers using both the IQR and Z-score methods, visualizing the results with boxplots.
-    
