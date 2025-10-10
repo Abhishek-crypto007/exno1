@@ -64,11 +64,6 @@ print("\nFinal cleaned dataset saved as 'iris_cleaned.csv'")
 ```
 # Output
 [text](ex1output.txt)
-![alt text](ex1.jpg)
-![alt text](ex1(2).png)
-![alt text](ex1(3).png)
-
-
 
 # Result
 
